@@ -38,7 +38,7 @@ services:
       - app-network
 
   mssql_server:
-    image: mcr.microsoft.com
+    image: mcr.microsoft.com/mssql/server:2025-latest
     restart: unless-stopped
     environment:
       ACCEPT_EULA: 'Y'
